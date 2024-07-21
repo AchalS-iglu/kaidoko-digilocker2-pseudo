@@ -1,0 +1,19 @@
+TEST generateAuthorizationCode
+  CALL generateAuthorizationCode with valid parameters
+  ASSERT authorizationCode is returned
+END TEST
+
+TEST exchangeAuthorizationCodeForToken
+  CALL exchangeAuthorizationCodeForToken with valid parameters
+  ASSERT accessToken and refreshToken are returned
+END TEST
+
+TEST validateAccessToken
+  CALL validateAccessToken with valid accessToken
+  ASSERT user is returned
+END TEST
+
+TEST refreshAccessToken
+  CALL refreshAccessToken with valid parameters
+  ASSERT new accessToken is returned
+END TEST

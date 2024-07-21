@@ -1,0 +1,5 @@
+FUNCTION shareDocument(user, documentId, recipient)
+  VALIDATE recipient
+  GRANT access to document
+  RETURN success message
+END FUNCTION

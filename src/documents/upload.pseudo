@@ -1,0 +1,5 @@
+FUNCTION uploadDocument(user, document)
+  VALIDATE document
+  STORE document in user storage
+  RETURN success message
+END FUNCTION

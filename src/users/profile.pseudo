@@ -1,0 +1,5 @@
+FUNCTION updateProfile(user, newDetails)
+  VALIDATE newDetails
+  UPDATE user profile
+  RETURN success message
+END FUNCTION

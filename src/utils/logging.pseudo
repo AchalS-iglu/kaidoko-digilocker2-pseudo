@@ -1,0 +1,4 @@
+FUNCTION logEvent(event)
+  RECORD event in log system
+  RETURN success message
+END FUNCTION

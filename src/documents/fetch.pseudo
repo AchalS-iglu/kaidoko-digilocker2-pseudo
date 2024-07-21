@@ -1,0 +1,4 @@
+FUNCTION fetchDocument(user, documentId)
+  RETRIEVE document from user storage
+  RETURN document
+END FUNCTION

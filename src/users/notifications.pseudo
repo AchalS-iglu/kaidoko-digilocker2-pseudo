@@ -1,0 +1,5 @@
+FUNCTION sendNotification(user, message)
+  VALIDATE user contact details
+  SEND message to user
+  RETURN success message
+END FUNCTION

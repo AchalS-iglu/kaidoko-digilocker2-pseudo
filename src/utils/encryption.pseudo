@@ -1,0 +1,9 @@
+FUNCTION encryptData(data)
+  APPLY encryption algorithm
+  RETURN encrypted data
+END FUNCTION
+
+FUNCTION decryptData(encryptedData)
+  APPLY decryption algorithm
+  RETURN decrypted data
+END FUNCTION

@@ -1,0 +1,8 @@
+FUNCTION authenticateUser(credentials)
+  VALIDATE credentials
+  IF valid
+    GENERATE sessionToken
+    RETURN sessionToken
+  ELSE
+    RETURN error "Invalid credentials"
+END FUNCTION

@@ -1,0 +1,33 @@
+FUNCTION generateAuthorizationCode(clientId, redirectUri, scope, state)
+  VALIDATE clientId and redirectUri
+  GENERATE authorizationCode
+  STORE authorizationCode with clientId, redirectUri, scope, and state
+  RETURN authorizationCode
+END FUNCTION
+
+FUNCTION exchangeAuthorizationCodeForToken(authorizationCode, clientId, clientSecret, redirectUri)
+  VALIDATE authorizationCode, clientId, clientSecret, and redirectUri
+  IF valid
+    GENERATE accessToken and refreshToken
+    STORE tokens with associated clientId and user
+    RETURN accessToken and refreshToken
+  ELSE
+    RETURN error "Invalid authorization code or client credentials"
+END FUNCTION
+
+FUNCTION validateAccessToken(accessToken)
+  CHECK accessToken validity
+  IF valid
+    RETURN associated user
+  ELSE
+    RETURN error "Invalid or expired access token"
+END FUNCTION
+
+FUNCTION refreshAccessToken(refreshToken, clientId, clientSecret)
+  VALIDATE refreshToken, clientId, and clientSecret
+  IF valid
+    GENERATE new accessToken
+    RETURN new accessToken
+  ELSE
+    RETURN error "Invalid refresh token or client credentials"
+END FUNCTION

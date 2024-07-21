@@ -1,0 +1,6 @@
+FUNCTION recommendDocuments(user)
+  ANALYZE user profile and usage patterns
+  IDENTIFY potential documents needed
+  GENERATE recommendations list
+  RETURN recommendations list
+END FUNCTION

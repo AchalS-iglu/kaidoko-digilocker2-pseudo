@@ -1,0 +1,7 @@
+FUNCTION authorizeUser(sessionToken, requiredRole)
+  VALIDATE sessionToken
+  IF sessionToken is valid AND userRole matches requiredRole
+    RETURN true
+  ELSE
+    RETURN false
+END FUNCTION

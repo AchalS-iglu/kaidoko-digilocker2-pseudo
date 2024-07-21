@@ -1,0 +1,10 @@
+BEGIN
+  INITIALIZE system
+  SETUP routes
+  START server
+
+  FUNCTION onUserLogin(user)
+    CALL recommendDocuments(user)
+    DISPLAY recommendations to user
+  END FUNCTION
+END

@@ -1,0 +1,4 @@
+FUNCTION verifyDocument(documentId)
+  CHECK blockchain for verification status
+  RETURN verification status
+END FUNCTION
